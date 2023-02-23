@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-pg",
+  "version": "1.0.0",
+  "description": "A demo of using PostgreSQL in Node.JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLAbram/nodejs-pg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MLAbram/nodejs-pg/issues"
+  },
+  "homepage": "https://github.com/MLAbram/nodejs-pg#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.9.0"
+  }
+}

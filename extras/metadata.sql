@@ -1,11 +1,11 @@
 --
 -- create schema
-create schema demo;
+create schema demos;
 
 --
--- drop table demo.contacts;
--- select * from demo.contacts;
-create table if not exists demo.contacts (
+-- drop table demos.contacts;
+-- select * from demos.contacts;
+create table if not exists demos.contacts (
   contacts_id serial primary key,
   first_name_t varchar(50) null,
   last_name_t varchar(50) null,
@@ -23,8 +23,8 @@ create table if not exists demo.contacts (
 );
 
 --
--- demo data from https://www.mockaroo.com/
-insert into demo.contacts (first_name_t, last_name_t, email_t, phone_t, addr1_t, addr2_t, city_t, state_t, zip_code_t, notes_t) values 
+-- demos data from https://www.mockaroo.com/
+insert into demos.contacts (first_name_t, last_name_t, email_t, phone_t, addr1_t, addr2_t, city_t, state_t, zip_code_t, notes_t) values 
 ('Anthea', 'Pasmore', 'apasmore0@sbwire.com', '740-266-0127', '78038 Lunder Lane', null, 'Columbus', 'OH', '43240', null)
 ,('Fayette', 'Gouth', 'fgouth1@xinhuanet.com', '309-769-0318', '14271 Sunfield Parkway', 'Suite 62', 'Bloomington', 'IL', '61709', null)
 ,('Linea', 'Bengtson', 'lbengtson2@alexa.com', '203-122-4251', '2 Blue Bill Park Avenue', null, 'Waterbury', 'CT', '06726', null)

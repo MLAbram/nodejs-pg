@@ -47,7 +47,7 @@ app.get('/getRecord/:id', async (req, res) => {
     const id = parseInt(req.params.id);  // get id user entered
     
     const result = pool.query('select * from demo.contacts where contacts_id = $1;', [id], (error, results) => {
-        if (error) return res.status(400).send(error);
+        if (error) return res.status(400).json({Error: error.message});
         res.status(200).json(results.rows);
     });
 });

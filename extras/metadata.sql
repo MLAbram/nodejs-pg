@@ -2,6 +2,13 @@
 -- create schema
 create schema demos;
 
+-- revoke all privileges on schema user_mgmt from dt_js_admin cascade;
+-- revoke usage on schema user_mgmt from dt_js_admin cascade;
+grant usage on schema user_mgmt to dt_js_admin;
+alter default privileges in schema user_mgmt grant select, insert, update on tables to dt_js_admin;
+alter default privileges in schema user_mgmt grant usage, select on sequences to dt_js_admin;
+
+
 --
 -- drop table demos.contacts;
 -- select * from demos.contacts;
